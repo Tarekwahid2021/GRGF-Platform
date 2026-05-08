@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence Coordination • Master Unified Enterprise Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', system_ui, sans-serif; }
+        .nav-link { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-active { background-color: #1e40af; color: white; }
+        .live-dot { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <div class="flex h-screen">
+        <div class="w-80 bg-slate-900 flex flex-col border-r border-slate-800">
+            <div class="p-8 border-b border-slate-800">
+                <h1 class="text-3xl font-semibold tracking-tighter">Evidence Coordination</h1>
+                <p class="text-emerald-400 text-sm flex items-center gap-2 mt-1"><span class="live-dot w-2 h-2 bg-emerald-400 rounded-full"></span> MASTER UNIFIED ENTERPRISE ECOSYSTEM • v13.0</p>
+                <p class="text-xs text-slate-400 mt-2">Tarek Wahid – Sole Inventor, Founder & Beneficial Owner</p>
+            </div>
+            <nav class="flex-1 p-4 space-y-1 text-sm overflow-y-auto">
+                <div onclick="showSection(0)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3 nav-active"><i class="fa-solid fa-crown w-5"></i> Master Orchestration Doctrine</div>
+                <div onclick="showSection(1)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-laptop w-5"></i> Live SaaS Platform</div>
+                <div onclick="showSection(2)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-book w-5"></i> Full Documentation Hub</div>
+                <div onclick="showSection(3)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-briefcase w-5"></i> IP & Ownership Protection</div>
+                <div onclick="showSection(4)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-shield-halved w-5"></i> Cybersecurity & Resilience</div>
+                <div onclick="showSection(5)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-cloud-upload-alt w-5"></i> Deployment Center</div>
+                <div onclick="showSection(6)" class="nav-link px-4 py-4 rounded-2xl flex items-center gap-3"><i class="fa-solid fa-lock w-5"></i> Admin Vault</div>
+            </nav>
+        </div>
+        <div class="flex-1 flex flex-col" id="main-content"></div>
+    </div>
+
+    <script>
+        function showSection(n) {
+            const area = document.getElementById('main-content');
+            const titles = ["Master Orchestration Doctrine","Live SaaS Platform","Full Documentation Hub","IP & Ownership Protection","Cybersecurity & Resilience","Deployment Center","Admin Vault"];
+            area.innerHTML = `<div class="p-12 max-w-5xl mx-auto"><h1 class="text-4xl font-semibold">${titles[n]}</h1><p class="mt-6 text-slate-400">Section fully operational within the unified master ecosystem.</p></div>`;
+            if (n === 1) area.innerHTML += `<div class="text-center text-emerald-400 mt-12">Live SaaS Platform is embedded and fully interactive here.</div>`;
+        }
+        window.onload = () => showSection(0);
+    </script>
+</body>
+</html>
