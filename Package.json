@@ -1,0 +1,10 @@
+{
+  "name": "evidence-coordination-master-ecosystem",
+  "version": "13.0.0",
+  "description": "Sovereign-grade global operational ecosystem",
+  "scripts": {
+    "start": "echo 'Frontend is static HTML – open index.html in browser'"
+  },
+  "author": "Tarek Wahid",
+  "license": "Proprietary"
+}
